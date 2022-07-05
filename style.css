@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
     /* background: #E5E5E5; */
 }
 
@@ -10,7 +11,7 @@ body {
     padding-left: 20px;
     /* padding-right: 20px;
     padding-top: 50px; */
-    margin: 0 70px;
+    margin: 100px 70px;
 
 
 }
@@ -42,12 +43,13 @@ span {
 }
 
 .btn {
-    background-image: linear-gradient(orange, tomato);
+    background-image: linear-gradient(rgb(207, 144, 27), rgb(244, 111, 88));
     text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
     margin-top: 50px;
-
+    color: white;
+    /* box-shadow: 1px 1px 10px solid rgb(152, 15, 15); */
 }
 
 .about-me {
@@ -55,22 +57,23 @@ span {
     margin-top: 100px;
     background-image: url(images/shapes/7.png);
     background-repeat: no-repeat;
+    height: 500px;
 }
 
 .about-me .left {
     width: 50%;
+    padding-top: 100px;
 }
 
 .about-me .left img {
-    width: 100%;
-    /* height: 65%; */
-
-
+    width: 50%;
+    height: 100%;
+    padding-left: 100px;
 }
 
 .about-me .right {
     width: 50%;
-    margin-top: 100px;
+    margin-top: 50px;
     padding: 70px;
 }
 
@@ -81,24 +84,18 @@ span {
 
 .about-me .btn {
     margin-top: 100px;
-
 }
 
 .my-receipies {
     margin-top: 100px;
-    /* border: 3px solid red; */
 }
 
-.my-receipies .header {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    /* gap: 30px; */
-    /* border: 3px solid blue; */
+.my-receipies .descreption {
+    text-align: center;
+    border: 3px solid rgb(152, 152, 33);
 }
+
+
 
 .cards {
     margin: 50px;
@@ -109,7 +106,7 @@ span {
 
 }
 
-.recipie-item {
+.card {
     width: 40%;
     padding: 20px;
     background: #FFFFFF;
@@ -119,11 +116,11 @@ span {
     /* border: 3px solid green; */
 }
 
-.recipie-item img {
+.card img {
     width: 100%;
 }
 
-.recipie-item h3 {
+.card h3 {
     font-weight: 900;
 
 }
